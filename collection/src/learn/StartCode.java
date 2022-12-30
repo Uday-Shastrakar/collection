@@ -13,16 +13,35 @@ public class StartCode {
         name.add("mohit");
         name.add("uday");
         System.out.println(name);
-        System.out.println(name.get(1));
+//        System.out.println(name.get(1));
 
         //un type safe
-        LinkedList list = new LinkedList();
-        list.add("uday");
-        list.add(12);
-        list.add(6.566);
-        list.add(true);
+//        LinkedList list = new LinkedList();
+//        list.add("uday");
+//        list.add(12);
+//        list.add(6.566);
+//        list.add(true);
+//
+//        System.out.println(list);
 
-        System.out.println(list);
+        name.remove(3);
+        System.out.println(name);
+
+        //size
+        System.out.println("SIZE ="+name.size());
+        //check item is ther or not
+        System.out.println(name.contains("uday"));
+        //check for empty
+        System.out.println(name.isEmpty());
+
+        //setting value
+//        name.set(1,"ram");
+         name.add(1,"ram");
+        System.out.println(name);
+
+        //remove all elements
+        name.clear();
+        System.out.println(name);
 
     }
 }
