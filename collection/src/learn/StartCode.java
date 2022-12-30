@@ -40,8 +40,26 @@ public class StartCode {
         System.out.println(name);
 
         //remove all elements
-        name.clear();
+//        name.clear();
         System.out.println(name);
+
+        Vector<String> vector = new Vector<>();
+        vector.addAll(name);
+        System.out.println("vector"+vector);
+
+        System.out.println("-------------------------------");
+        HashSet<Double> hs= new HashSet<>();
+        hs.add(1.14);
+        hs.add(99.333);
+
+        hs.add(1.22);
+        hs.add(1.155);
+        System.out.println(hs);
+
+        TreeSet<Double> tset =new TreeSet<>();
+        tset.addAll(hs);
+        System.out.println(tset);
+
 
     }
 }
